@@ -19,8 +19,8 @@
 #
 # Filename:  by: andrek
 # Timesamp: 9/4/16 :: 9:52 PM
-from .node import *
+from .user import *
 
-from ._version import get_versions
+from src.gnode_version import get_versions
 __version__ = get_versions()['version']
 del get_versions

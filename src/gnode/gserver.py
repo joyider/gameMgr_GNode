@@ -18,12 +18,4 @@
 #    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Filename:  by: andrek
-# Timesamp: 9/4/16 :: 9:52 PM
-from __future__ import print_function
-
-import json
-import re
-import sys
-from datetime import datetime
-
-import requests
+# Timesamp: 9/4/16 :: 10:34 PM
