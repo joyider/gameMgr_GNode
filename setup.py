@@ -20,35 +20,38 @@
 # Filename:  by: andrek
 # Timesamp: 9/4/16 :: 10:06 PM
 from setuptools import setup, find_packages
+import versioneer
 
 with open('README.rst') as file:
-    long_description = file.read()
+	long_description = file.read()
 with open('CHANGES.rst') as file:
-    long_description += '\n\n' + file.read()
+	long_description += '\n\n' + file.read()
 
 setup(
-    name='gameMgr_GNode',
-    description="Norse Game Manager-Node installation ",
-    long_description=long_description,
-    classifiers=[
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: System :: Boot",
-        "Topic :: System :: Systems Administration",
-        "Topic :: Internet :: WWW/HTTP :: Site Management",
-        "Environment :: Web Environment",
-        "Intended Audience :: Developers",
-        "Intended Audience :: System Administrators",
-        "License :: OSI Approved :: GPLv3",
-        "Development Status :: 3 - Alpha",
-    ],
-    keywords='http,web,norse,game,joyider',
-    author='André Karlsson',
-    author_email='andre.karlsson@protractus.se',
-    url='https://github.com/joyider/gameMgr_GNode',
-    license='GPLv3',
-    packages=find_packages(),
-    include_package_data=True,
-    zip_safe=True,
-    # install_requires=['requests','http-signature'],
+	name='gameMgr_GNode',
+	version=versioneer.get_version(),
+	cmdclass=versioneer.get_cmdclass(),
+	description="Norse Game Manager-Node installation ",
+	long_description=long_description,
+	classifiers=[
+		"Programming Language :: Python",
+		"Topic :: Software Development :: Libraries :: Python Modules",
+		"Topic :: System :: Boot",
+		"Topic :: System :: Systems Administration",
+		"Topic :: Internet :: WWW/HTTP :: Site Management",
+		"Environment :: Web Environment",
+		"Intended Audience :: Developers",
+		"Intended Audience :: System Administrators",
+		"License :: OSI Approved :: GPLv3",
+		"Development Status :: 3 - Alpha",
+	],
+	keywords='http,web,norse,game,joyider',
+	author='André Karlsson',
+	author_email='andre.karlsson@protractus.se',
+	url='https://github.com/joyider/gameMgr_GNode',
+	license='GPLv3',
+	packages=find_packages(),
+	include_package_data=True,
+	zip_safe=True,
+	# install_requires=['requests','http-signature'],
 )
